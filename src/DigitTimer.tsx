@@ -2,13 +2,15 @@ import React from 'react';
 import './DigitTimer.css';
 
 interface DigitTimerProps {
-  timeString: string;
+  remainingTime: number;
+  isActive: boolean;
+  isPaused: boolean;
 }
 
-const DigitTimer: React.FC<DigitTimerProps> = ({ timeString }) => {
+const DigitTimer: React.FC<DigitTimerProps> = ({ remainingTime, isActive, isPaused }) => {
   return (
     <div className="digit-timer-container">
-      {timeString.split('').map((digit, _idx) => (
+      {remainingTime.toString().split('').map((digit, _idx) => (
         <div key={_idx} className="digit-container">
           <div className="digit">{digit}</div>
         </div>
