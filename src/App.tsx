@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './App.css';
-import { DigitTimer } from './DigitTimer';
+import DigitTimer from './DigitTimer';
 
 interface Donation {
   id: number;
