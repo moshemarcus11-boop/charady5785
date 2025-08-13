@@ -18,4 +18,3 @@ const DigitTimer: React.FC<DigitTimerProps> = ({ timeString }) => {
 };
 
 export default DigitTimer;
-
